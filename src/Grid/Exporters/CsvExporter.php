@@ -194,7 +194,7 @@ class CsvExporter extends AbstractExporter
      */
     protected function getVisiableTitles()
     {
-        $titles = $this->grid->visibleColumns()
+        $titles = $this->grid->columns()
             ->mapWithKeys(function (Column $column) {
                 $columnName = $column->getName();
                 $columnTitle = $column->getLabel();
